@@ -85,6 +85,20 @@
             </table>
         </div>
     </main>
+    <main id="container">
+        <div id="side-panel">
+            <h2>Bars List</h2>
+            <button>Sort by Rating</button>
+
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Rating</th>
+                    <th>Location</th>
+                </tr>
+            </table>
+        </div>
+    </main>
     <script>
         // Define the Mapbox access token
         mapboxgl.accessToken =
@@ -165,7 +179,7 @@
         geojsonFetch();
 
         
-        let btn = document.getElementsByTagName("button")[0];
+        let btn = document.getElementsByTagName("button")[1];
         btn.addEventListener('click', sortTable);
 
         // define the function to sort table
